@@ -4,44 +4,109 @@ body {
 
 h1 {
   font-family: "Overpass", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34.45px;
   color: #fff;
+}
+
+h2 {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35.45px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 7px;
 }
 
 p {
   font-family: "Overpass", sans-serif;
   font-size: 15px;
   color: hsl(217, 12%, 63%);
+  margin-bottom: 7px;
 }
-span {
-  font-family: "Overpass", sans-serif;
-  font-size: 15px;
-  color: hsl(217, 12%, 63%);
-  margin-top: 15px;
-}
+
 #container {
+  margin-top: 195px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.content {
-  padding-left: 40px;
-  padding-right: 40px;
-  height: 400px;
-  width: 350px;
+#content-container {
+  position: relative;
   background: linear-gradient(180deg, #222933, #191d29);
-
   border-radius: 6%;
-  margin-top: 20%;
+  height: 416px;
+  width: 412px;
+  margin: 0;
 }
+.content {
+  position: inherit;
+  margin-left: 32px;
+  margin-right: 32px;
+  display: ;
+}
+
+.thank-you {
+  position: inherit;
+  margin-left: 32px;
+  margin-right: 40px;
+  visibility: hidden;
+}
+
+.thank-you img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+}
+
+.rating-selected {
+  width: 193px;
+  height: 32px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 22.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+.rating-selected-text {
+  position: absolute;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  color: #fc7614;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.thank-you-body {
+  display: block;
+  margin-top: 32px;
+}
+
+.p-thank-you {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 7px;
+  text-align: center;
+  margin-top: 0;
+}
+
 .selector-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 1%;
-  padding-right: 1%;
+  margin-bottom: 15px;
 }
 
 .star {
@@ -49,19 +114,19 @@ span {
   flex-direction: row;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
   background-color: #272e38;
   text-align: center;
 }
 
 .star img {
-  margin-top: 12px;
-  height: 20px;
-  width: 20px;
+  margin-top: 16px;
+  height: 16px;
+  width: 16.75px;
 }
 
 .rbutton {
@@ -70,17 +135,92 @@ span {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  height: 50px;
-  width: 50px;
+  height: 51px;
+  width: 51px;
   border-radius: 50%;
   background-color: #272e38;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.rbutton-active {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  height: 51px;
+  width: 51px;
+  border-radius: 50%;
+  background-color: #818893;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.rbutton-text {
+  position: absolute;
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  color: hsl(217, 12%, 63%);
+  margin-top: 15px;
+  line-height: 24px;
+}
+
+.rbutton-text-active {
+  position: absolute;
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  color: pink;
+  margin-top: 15px;
+  line-height: 24px;
 }
 
 .submit-button {
   position: relative;
-  height: 50px;
-  width: 300px;
+  height: 45px;
+  width: 341px;
   background-color: hsl(25, 97%, 53%);
-  border-radius: 20%;
-  margin-top: 20px;
+  border-radius: 22.5px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
 }
+
+.submit-button button {
+  color: #fff;
+}
+
+.submit-button span {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  line-height: 18.99px;
+}
+
+.submit-button:hover {
+  background-color: #fff;
+}
+
+.submit-button:hover span {
+  color: #fc7614;
+}
+
+.rbutton:hover {
+  background-color: #fc7614;
+}
+
+.rbutton:hover span {
+  color: #fff;
+}
+
+/* .rbutton:hover ~ .rbutton {
+  background-color: #fff;
+  z-index: 6;
+} */
