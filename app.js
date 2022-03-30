@@ -17,9 +17,9 @@ function toggleClass(target) {
   });
 }
 
-function toggleClassText(event) {
+function toggleClassText(target) {
   ratingsText.forEach((btext) => {
-    if (btext == event) {
+    if (btext == target) {
       btext.classList.add("rbutton-text-active");
     } else {
       btext.classList.remove("rbutton-text-active");
@@ -30,11 +30,13 @@ function toggleClassText(event) {
 for (let button of ratingButtons) {
   button.addEventListener("click", function (event) {
     event.preventDefault();
+
     selectedRating = button.value;
     toggleClass(button);
 
     for (let btext of ratingsText) {
       toggleClassText(btext);
+      // ratingsText.item(selectedRating - 1).style.color = "#fff";
     }
   });
 }
