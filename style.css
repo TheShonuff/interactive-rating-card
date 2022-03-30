@@ -144,6 +144,14 @@ p {
   cursor: pointer;
 }
 
+button {
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  color: hsl(217, 12%, 63%);
+  margin-top: 100px;
+  align-items: center;
+}
+
 .rbutton-active {
   margin-top: 20px;
   position: relative;
@@ -157,6 +165,7 @@ p {
   border-style: none;
   border-width: 0;
   cursor: pointer;
+  color: #fff;
 }
 
 .rbutton-text {
