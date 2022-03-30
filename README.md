@@ -20,6 +20,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ## Overview
 
+A fun challenge from the frontend mentor website.
+
 ### The challenge
 
 Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
@@ -35,23 +37,27 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](http://thedudeway.com/interactive-rating-card/)
 
 ## My process
 
+Started blocking out the site in HTML and CSS. Once I felt in the design was in a solid place I added in the functionality. The first huddle came with deactivating a button when a new choice is selected. Solving this required an additioanl function to be added to the Event Listener for the button click. I still not have solved getting the span tag that displays the button text to update correctly.
+
 ### What I learned
 
+Continuing on my javascript journey I've learned event listeners this go around as well and using functions better. Getting better at for loops but have not mastered nested for loops yet.
+
 ### Continued development
+
+Need to continue working on mastering functions and get iterating through array's and objects. Started using the .forEach this time as well as the arrow functions.
 
 ### Useful resources
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Joe](https://www.thedudeway.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/theshonuff)
